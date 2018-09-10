@@ -1,0 +1,205 @@
+<?xml version = "1.0"?>
+<GameData>
+<!-- screenTitle is also used to identify you and your animation. 
+     So make sure to include your name as part of the screenTitle -->
+<title>Battle Anorak</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>1000</maxFrames>
+<username>harshp</username>
+
+<view>
+  <width>1200</width>
+  <height>700</height>
+</view>
+
+<maxVolume>1</maxVolume>
+
+<HUD>
+  <width>150</width>
+  <height>150</height>
+</HUD>
+
+<hpBar>
+  <width>875</width>
+  <height>20</height>
+</hpBar>
+
+<music>sound/Revengeance.mp3</music>
+
+
+<!-- World Specs -->
+
+<world>
+  <width>4800</width>
+  <height>1600</height>
+</world>
+
+<sky>
+  <file>assets/SkyNew.png</file>
+  <factor>3</factor>
+  <transparency>false</transparency>
+</sky>
+
+<mountains>
+  <file>assets/MountainsNew.png</file>
+  <factor>2</factor>
+  <transparency>true</transparency>
+</mountains>
+
+<castle>
+  <file>assets/CastleAnorakNew.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</castle>
+
+
+<!-- End World Specs -->
+
+
+
+<font name="font">
+  <file>fonts/arial.ttf</file>
+  <size>15</size>
+  <red>255</red>
+  <green>255</green>
+  <blue>255</blue>
+  <alpha>0</alpha>
+</font>
+
+<font2 name="game_over">
+  <file>fonts/game_over.ttf</file>
+  <size>400</size>
+  <red>255</red>
+  <green>255</green>
+  <blue>255</blue>
+  <alpha>0</alpha>
+</font2>
+
+
+<dampening>0.88</dampening>
+
+<BossAmmo>30</BossAmmo>
+<Godzilla>
+  <health>500</health>
+  <frameInterval>175</frameInterval>
+  <speedX>-100</speedX>
+  <speedY>0</speedY>
+  <startLoc x="2500" y="1020"/>
+  <actions>2</actions>
+  <acceleration>100</acceleration>
+
+  <a1>
+    <file>assets/GodzillaRight.png</file>
+    <imageWidth>550</imageWidth>
+    <imageHeight>630</imageHeight>
+    <frames>6</frames>
+    <transparency>false</transparency>
+  </a1>
+
+  <a2>
+    <file>assets/GodzillaLeft.png</file>
+    <imageWidth>550</imageWidth>
+    <imageHeight>630</imageHeight>
+    <frames>6</frames>
+    <transparency>false</transparency>
+  </a2>
+</Godzilla>
+
+
+<Player>
+  <ammo>5</ammo>
+  <health>200</health>
+  <frameInterval>100</frameInterval>
+  <speedX>800</speedX>
+  <speedY>800</speedY>
+  <startLoc x="50" y="140"/>
+  <actions>2</actions>
+  <acceleration>100</acceleration>
+  <maxVelocity>800</maxVelocity>
+
+  <a1>
+    <file>assets/PlayerRight.png</file>
+    <imageWidth>141</imageWidth>
+    <imageHeight>106</imageHeight>
+    <frames>4</frames>
+    <transparency>false</transparency>
+  </a1>
+
+  <a2>
+    <file>assets/PlayerLeft.png</file>
+    <imageWidth>141</imageWidth>
+    <imageHeight>106</imageHeight>
+    <frames>4</frames>
+    <transparency>false</transparency>
+  </a2>
+</Player>
+
+
+<numDiscs>0</numDiscs>
+<DestructoDisc>
+  <distance>900</distance>
+  <frameInterval>25</frameInterval>
+  <bulletInterval>150</bulletInterval>
+  <speedX>300</speedX>
+  <speedY>300</speedY>
+  <bulletSpeed>400</bulletSpeed>
+  <startLoc x="300" y="200"/>
+  <actions>2</actions>
+  <a1>
+    <file>assets/DestructoDiscRight2.png</file>
+    <imageWidth>68</imageWidth>
+    <imageHeight>22</imageHeight>
+    <frames>3</frames>
+    <transparency>false</transparency>
+  </a1>
+  <a2>
+    <file>assets/DestructoDiscLeft2.png</file>
+    <imageWidth>68</imageWidth>
+    <imageHeight>22</imageHeight>
+    <frames>3</frames>
+    <transparency>false</transparency>
+  </a2>
+</DestructoDisc>
+
+<Explosion>
+  <frames>24</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <startLoc x="0" y="0"/>
+  <actions>1</actions>
+  <a1>
+    <file>assets/explode2.png</file>
+    <imageWidth>128</imageWidth>
+    <imageHeight>128</imageHeight>
+    <frames>24</frames>
+    <transparency>true</transparency>
+  </a1>
+</Explosion>
+
+<numBombs>0</numBombs>
+<SpiritBomb>
+  <frameInterval>50</frameInterval>
+  <distance>1500</distance>
+  <bulletInterval>200</bulletInterval>
+  <speedX>150</speedX>
+  <speedY>150</speedY>
+  <startLoc x="0" y="0"/>
+  <bulletSpeed>100</bulletSpeed>
+  <actions>1</actions>
+  <a1>
+     <file>assets/MiniBomb.png</file>
+     <imageWidth>30</imageWidth>
+     <imageHeight>31</imageHeight>
+     <frames>1</frames>
+     <transparency>false</transparency>
+  </a1>
+  <transparency>false</transparency>
+</SpiritBomb>
+
+
+</GameData>
